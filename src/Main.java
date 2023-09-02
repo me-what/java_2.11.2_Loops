@@ -57,5 +57,21 @@ public class Main {
             System.out.println();
         }
 
+
+        Scanner in4 = new Scanner(System.in);
+        int n = 0;
+        do
+        {
+            System.out.println("Введите первое число: ");
+            int num1 = in4.nextInt();
+            System.out.println("Введите второе число: ");
+            int num2 = in4.nextInt();
+            System.out.printf("%d * %d = %d \n", num1, num2, num1 * num2);
+
+            System.out.println("Для выхода из программы нажмите цифру 1, для подолжения любую другую цифру");
+            n = in4.nextInt();
+        }
+        while(n!=1);
+        in4.close();
     }
 }
